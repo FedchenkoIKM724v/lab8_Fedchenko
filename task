@@ -1,0 +1,27 @@
+#include <iostream>
+int main() {
+	int a[20];
+	int y = 0;
+	for (int i = 0; i < 20; i++) {
+		std::cout << "Enter " << i + 1 << " number: ";
+		std::cin >> a[i];	
+		std::cout << "\n";
+	}
+
+	std::cout << "Perfect numbers: ";
+	for (int x = 0; x < 10; x++) {
+		int num1 = 0;
+		for (int b = 1; b < a[x]; b++) {
+			if (a[x] % b == 0) {
+				num1 += b;
+			}
+		}
+		if (num1 == a[x]) {
+			std::cout << a[x] <<" ";
+			y++;
+		}
+	}
+	if (y == 0) {
+		std::cout << "None";
+	}
+}
