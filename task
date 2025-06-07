@@ -9,7 +9,7 @@ int main() {
 	}
 
 	std::cout << "Perfect numbers: ";
-	for (int x = 0; x < 10; x++) {
+	for (int x = 0; x < 20; x++) {
 		int num1 = 0;
 		for (int b = 1; b < a[x]; b++) {
 			if (a[x] % b == 0) {
